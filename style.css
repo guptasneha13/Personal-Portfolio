@@ -1,0 +1,403 @@
+nav{
+    position:fixed;
+    width: 99%;
+    background-color: black;
+    z-index: 1;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:fit-content;
+    overflow:hidden;
+}
+li{
+    float: left;
+    border-right:1px solid #bbb;
+
+}
+li a {
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color:cornflowerblue;
+  }
+  
+  .active{
+    background-color: cornflowerblue;
+  }
+  
+  
+.me{
+    background-image: url(wallpaper.jpg);
+    padding-top: 7px;
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: fill;
+    padding-left: 0%;
+    padding-right: 0;
+    
+
+}
+
+
+
+#m{
+    padding: 0px;
+    margin:0px;
+}
+
+.me h1{
+    color: aliceblue;
+    padding-top: 90px;
+    padding-left: 45%;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    padding-left: 30%;
+    font-size: 40px;
+    color:aliceblue;
+
+}
+#cv{
+    padding-left: 45%;
+}
+.cvbtn{
+    width: 200px;
+    height: 70px;
+    background-color:rgb(23, 128, 219);
+    color: black;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    border:1px solid black
+}
+.cvbtn:hover{
+    background-color:  #eb0f63;
+}
+span{
+    color: aliceblue;
+    padding-left: 15px;
+}
+h3{
+    font-size: 40px;
+    color: aliceblue;
+    padding-left: 30%;
+
+}
+.element{
+    color: cornflowerblue;
+}
+@keyframes example
+{
+    0%   {color: rgb(228, 54, 54);}
+  25%  {color: yellow;}
+  50%  {color:aqua;}
+  100% {color: darksalmon;}
+}
+
+span.type{
+    transform: translate(50px);
+    animation-name: example;
+    animation-duration:25s;
+}
+/*#e{
+    float: right;
+    padding: 0px;
+    width: 30%;
+    height: 600px;
+}*/
+h4 {
+    content: "who i am";
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline solid rgb(50, 150, 150);;
+
+}
+#aboutme{
+    display: flex;
+    padding: 30px;
+}
+.pic{
+    padding-left: 60px;
+    width: 40%;
+}
+.pic img
+{
+    
+    width:200px;
+    height: 100 px;
+    border-radius: 200px;
+}
+#content{
+    width:60%;
+    height:350px;
+    border: 1px solid black;
+    padding:30px;
+    background-color: rgb(50, 150, 150);
+    
+}
+#content p{
+    text-align: justify;
+    padding:3px;
+    font-size: 20px;
+    color: black;
+}
+.skills_main{
+    background-color: black;
+    width:100%;
+    height:500px;
+    color: beige;
+    padding: 5px;
+}
+
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: aqua;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color:aqua;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 4s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 70%;
+    animation: css 4s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .js{
+    width: 50%;
+    animation: js 4s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .react{
+    width: 50%;
+    animation: js 4s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .java{
+    width: 75%;
+    animation: java 4s;
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .py{
+    width: 90%;
+    animation: node 4s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .cc{
+    width: 65%;
+    animation: cc 4s;
+}
+@keyframes cc {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .wp{
+    width: 60%;
+    animation: wp 4s;
+}
+@keyframes wp {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+.psec
+{
+    background-color: black;
+
+}
+.p1{
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.p1 p{
+    font-size: 30px;
+    color: rgb(11, 11, 51);
+    background-color: darkgrey;
+}
+.detail{
+    width: 50%;
+    border-right: 1px solid #ccc;
+    
+}
+.info1{
+    display: flex;
+    height: 500px;
+    background-color: rgb(4, 4, 31);
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.sec{
+    display: flex;
+}
+.icons{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.name{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+.form{
+
+    color: #bbb;
+    font-size: 20px;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+  }
+  .fname{
+    width:70%;
+    height:30px;
+  }
+  .email{
+    width:70%;
+    height:30px;
+  }
+  .msg{
+    width:70%;
+    height:70px;
+  }
+  .sendbtn{
+    background-color: #eb0f63;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size:20px ;
+    font-style: bold;
+    text-transform: capitalize;
+  }
+  .sendbtn:hover{
+    background-color: rgb(23, 128, 219);
+  }
+ 
+  
+  footer{
+    width: auto;
+    height: 205px;
+    background-color: aqua;
+    text-align-last: center;
+    padding-top: 20px;
+  }
+  .social{
+    width: 40px;
+    height: 40px;
+    margin:30px;
+  }
+  .copyright {
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
